@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Translation Result</h1>
+        <div class="translation-container">
+            <p><strong>Original Text:</strong> {{ original_text }}</p>
+            <p><strong>Destination Language:</strong> {{ dest_lang }}</p>
+            <p class="translation"><strong>Translated Text::</strong> {{ translation }}</p>
+        </div>
+    </div>
+</body>
+</html>
